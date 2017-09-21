@@ -1,0 +1,93 @@
+//body
+body {
+	background: url(../img/main_bg.png);
+	font: 14px RobotoBlack, sans-serif;
+	color: #353535;
+}
+
+//content
+		  	
+.content-text {
+  max-width:1900px;
+  margin:0 5%;
+}	
+
+
+.big-image img{
+	width:100%;
+}	  
+
+h1 {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align:justify;
+}
+
+@for $i from 1 through 3 {
+	 .block#{$i} {
+		float:left;
+		font:normal 14px Roboto-Black;
+		width:calc(32% - 46px);
+		height:auto;
+		margin:5px 20px 30px;
+		text-align:center;
+		border:5px outset Pink;
+		overflow:hidden;
+	}
+	 .block#{$i} img{
+		width:100%;
+		height:auto;
+	}
+}
+
+#lipsum {
+	clear:both;
+	font:normal 14px Roboto-Black;
+	margin:0 10% 0 10%;
+	padding:10px;
+}
+
+.form {
+	float:left;
+	margin-left:30px;
+}
+
+fieldset {
+	padding:8px;
+	border:1px solid #cccccc;
+	margin:0 10px;
+	background-color:pink;
+	max-width:310px;
+}
+
+textarea {
+	border:1px solid #333333;
+	background-color:#f4f9ff;
+	width:440px;
+	margin:2px 0;
+	
+	:focus {
+	border:2px solid #1351b4;
+	background-color:#ffffff;
+}
+}
+.input {
+	border:1px solid #333333;
+	height:27px;
+	width:300px;
+	line-height:27px;
+	margin:0;
+	
+	:focus {
+	border:2px solid #1261b4;
+	background:none;
+	background-color:#ffffff;
+}
+}
+
+#googleMap {
+	height:276px;
+	min-width:250px;
+	max-width:100%;
+}

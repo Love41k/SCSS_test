@@ -1,0 +1,44 @@
+//footer
+.footer {
+	height:170px;
+	margin-top:10px;
+	text-align:center;
+	background-color:#fff;
+	border-top:6px double lightpink;
+
+	ul {
+		position:absolute;
+		left:35%;
+		width:39%;
+		text-align:center;	
+		padding-top: 25px;
+
+		li {
+			float:left;
+			text-align:center;
+			font: 14px bold OpenSans-Bold, sans-serif;
+			color:Black;
+			margin-left:2.5%;
+			list-style-type: none;
+			/*margin-top:15px;*/
+
+			a {
+				color:Black;
+				text-align:center;
+			}
+		}
+	}
+}
+
+.list {
+	margin-top:50px;
+	text-align:center;
+	
+	 li {
+	list-style-type: none;
+	padding-top:13px;
+	letter-spacing:1.4px;
+	font:14px bold OpenSans-Bold, sans-serif;
+	}
+	
+}

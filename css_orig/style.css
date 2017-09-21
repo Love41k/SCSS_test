@@ -1,0 +1,254 @@
+@for $i from 1 through 3 {
+ .block#{$i} {
+	float:left;
+	font:normal 14px Roboto-Black;
+	width:calc(32% - 46px);
+	height:auto;
+	margin:5px 20px 30px;
+	text-align:center;
+	border:5px outset Pink;
+	overflow:hidden;
+}
+.block#{$i} img{
+	width:100%;
+	height:auto;
+}
+}
+
+.block1 img, .block2 img, .block3 img {
+	width:100%;
+	height:auto;
+	
+}
+
+#lipsum {
+	clear:both;
+	font:normal 14px Roboto-Black;
+	margin:0 10% 5px 10%;
+	padding:10px;
+}
+
+.form {
+	float:left;
+	margin-left:30px;
+}
+
+fieldset {
+	padding:10px;
+	border:1px solid #cccccc;
+	margin:10px;
+	background-color:pink;
+	max-width:310px;
+}
+
+textarea {
+	border:1px solid #333333;
+	background-color:#f4f9ff;
+	width:440px;
+	margin:2px 0;
+}
+
+textarea:focus {
+	border:2px solid #1351b4;
+	background-color:#ffffff;
+}
+
+.input {
+	border:1px solid #333333;
+	height:27px;
+	width:300px;
+	line-height:27px;
+	margin:10px 0;
+}
+
+.input:focus {
+	border:2px solid #1261b4;
+	background:none;
+	background-color:#ffffff;
+}
+
+#googleMap {
+	height:276px;
+	min-width:250px;
+	max-width:100%;
+}
+
+.footer {
+	height:170px;
+	margin-top:10px;
+	text-align:center;
+	background-color:#fff;
+	border-top:6px double lightpink;
+}
+
+.footermenu ul {
+	position:absolute;
+	left:35%;
+	width:39%;
+	text-align:center;	
+	padding-top: 25px;
+}
+
+.footermenu ul li {
+	float:left;
+		text-align:center;
+
+	font: 14px bold OpenSans-Bold, sans-serif;
+	color:Black;
+	margin-left:2.5%;
+	/*margin-top:15px;*/
+
+}
+
+.footermenu ul li a {
+	color:Black;
+	text-align:center;
+}
+
+.list {
+	margin-top:50px;
+	text-align:center;
+}
+
+.list li {
+	padding-top:13px;
+	letter-spacing:1.4px;
+	font:14px bold OpenSans-Bold, sans-serif;
+}
+
+
+		  
+@media screen and (max-width: 830px) {
+	#hr1 {
+	position:fixed;
+	left:3%;
+	top:-27px;
+}
+
+#hr2 {
+	position:fixed;
+	left:8%;
+	top:-27px;
+}
+
+
+.logo {
+	position:fixed;
+	right:90%;
+	top:3px;
+	z-index:1;
+}
+}		  
+		  
+@media screen and (max-width: 44em) {
+    html,
+    body {
+        margin:0;
+        overflow-x: hidden;
+    }
+	
+	.header {
+		background-color:#fff;
+		position:fixed;
+		top:0px;
+		width:100%;
+	}
+	
+	#menu-button {
+		height:44px;
+		width:42px;
+		position:fixed;
+		left: 14px;
+		top:12px;
+	}
+	
+	#hr1 {
+	position:fixed;
+	left:44%;
+	top:-27px;
+	}
+
+	#hr2 {
+	position:fixed;
+	left:55%;
+	top:-27px;
+	}
+	
+	.fa-bars {
+		padding:1px 3px;
+	}
+	
+	.logo {
+		position:fixed;
+		left:41%;
+	}
+	
+   .content-text {
+        margin-top: 79px;
+	}
+	
+		.submenu {
+			margin-top:-246px;
+			margin-left:52px;
+			border:9px groove Lightpink;
+		}
+    nav {
+
+        width: 18em;
+        opacity: 0;
+		top:75px;
+    }
+        nav ul > li {
+            height: 100%;
+            width: 147%;
+            text-align: left;
+            margin: 0;
+        }
+		nav ul li a {
+			padding: 15px 10px;
+		}
+ 
+    label {
+        display: block;
+    }
+ 
+
+/* 
+2 типа ссылок (а)
+1 - обычная ссылка (наведение, нажатие, при наведении цвет на 25% ярче базового, при нажатии на 20% темнее базового)
+2 - ссылка в виде кнопки (бордер, закруглить края, бг прозрачное и при наведении цветное)
+
+*/
+
+        label:hover,
+        input:checked ~ label {
+            color: #000;
+        }
+ 
+    input:checked ~ nav {
+        opacity: 1;
+        left: 0;
+    }
+        input:checked ~ nav ul > li {
+            padding: .55em .55em .55em 1.5em;
+		}
+ 
+    input:checked ~ .content-text {
+        margin-left: 20.5em;
+        margin-right: -20.5em;
+    }
+	/* !!! циклом !!! */
+	.block1, .block2, .block3 {
+	float:left;
+	font:normal 14px Roboto-Black;
+	width:98%;
+	margin:10px 0 10px;
+	text-align:center;
+	border:5px outset Pink;
+}
+	.footermenu ul {
+		margin-left:-29%;
+		width:70%
+	
+	}
+
