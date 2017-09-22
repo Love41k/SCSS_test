@@ -6,7 +6,8 @@ $breakpoints: (
         micro :  736,
         nano  :  520,
         pico  :  375,
-        wide  : 1230
+        wide  : 1230,
+        pad   : 830
 ) !default;
 
 @mixin breakpoint($first-point: null, $second-point: null) {

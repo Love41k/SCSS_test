@@ -6,6 +6,12 @@
 	background-color:#fff;
 	border-top:6px double lightpink;
 
+	.footermenu{
+		@include breakpoint(703px){
+			margin-left:-29%;
+			width:70%
+		}
+	}					
 	ul {
 		position:absolute;
 		left:35%;

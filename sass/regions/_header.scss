@@ -3,13 +3,11 @@
 	font:bold 14px OpenSansBold, san-serif;
 	height:75px;
 	padding:0 2px;
-
-	.logo {
+	@include breakpoint(703px){
+		background-color:#fff;
 		position:fixed;
-		right:75%;
-		top:3px;
-		z-index:1;
-
+		top:0px;
+		width:100%;
 	}
 	
 	#hr1 {
@@ -21,16 +19,35 @@
 		width:16px;
 		height:98px;
 		z-index:1;
+		@include breakpoint(830px){
+			position:fixed;
+			left:3%;
+			top:-27px;
+		}
+		@include breakpoint(703px){
+			position:fixed;
+			left:44%;
+			top:-27px;
+		}
 	}
 
 	#hr2 {
 		@extend #hr1;
 		left:25%;
+		@include breakpoint(703px){
+			left:55%;
+		}
 	}
 	
 	.fa {
 		float:left;
 		margin:0 auto;
+	}
+
+	.fa-bars {
+		@include breakpoint(703px){
+		padding:1px 3px;
+		}
 	}
 
 	label #menu {
@@ -43,6 +60,24 @@
 		display:none;
 	}
 
+	#menu-button {
+		@include breakpoint(703px){
+		height:44px;
+		width:42px;
+		position:fixed;
+		left: 14px;
+		top:12px;
+		}
+	}
+
+		.submenu {
+			@include breakpoint(703px){
+			margin-top:-246px;
+			margin-left:52px;
+			border:9px groove Lightpink;
+			}
+		}
+
 	nav{
 		position: fixed;
 		top: 0;
@@ -50,6 +85,11 @@
 		width: 100%;
 		background: #fff;
 		border: 1px solid rgba(0,0,0,.1);
+		@include breakpoint(703px){
+        width: 18em;
+        opacity: 0;
+		top:75px;
+		}
 
 		ul{
 			list-style: none;
@@ -60,9 +100,15 @@
 
 			li{
 				float: left;
+				@include breakpoint(703px){
+					height: 100%;
+					width: 147%;
+					text-align: left;
+					margin: 0;
+				}
 
-				:hover{background:MediumVioletRed;}
-				:hover > ul{display: block;}
+				&:hover{background:MediumVioletRed;}
+				&:hover > ul{display: block;}
 
 				a{
 					display: block; 
@@ -72,6 +118,9 @@
 					letter-spacing: 1px;
 					text-decoration: none;
 					text-transform: uppercase;
+					@include breakpoint(703px){
+						padding: 15px 10px;
+					}
 				}
 			}
 			ul{
@@ -97,4 +146,8 @@
 			}
 		}
 	}
+}
+@include breakpoint(703px){
+	display: block;
+
 }

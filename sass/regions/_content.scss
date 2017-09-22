@@ -3,18 +3,26 @@ body {
 	background: url(../img/main_bg.png);
 	font: 14px RobotoBlack, sans-serif;
 	color: #353535;
+	@include breakpoint(703px){
+		margin:0;
+		overflow-x: hidden;
+	}
 }
 
 //content
-		  	
+
 .content-text {
-  max-width:1900px;
-  margin:0 5%;
+	max-width:1900px;
+	margin:0 5%;
+	@include breakpoint(703px){
+		margin-top:79px;
+	}
 }	
 
 
 .big-image img{
 	width:100%;
+	margin-bottom:25px;
 }	  
 
 h1 {
@@ -25,7 +33,7 @@ h1 {
 }
 
 @for $i from 1 through 3 {
-	 .block#{$i} {
+	.block#{$i} {
 		float:left;
 		font:normal 14px Roboto-Black;
 		width:calc(32% - 46px);
@@ -33,10 +41,21 @@ h1 {
 		margin:5px 20px 30px;
 		text-align:center;
 		border:5px outset Pink;
+		-webkit-border-radius:5px; 
+		border-radius:5px; 
 		overflow:hidden;
+		@include breakpoint(703px){
+			float:left;
+			font:normal 14px Roboto-Black;
+			width:98%;
+			margin:10px 0 10px;
+			text-align:center;
+			border:5px outset Pink;
+		}
 	}
-	 .block#{$i} img{
-		width:100%;
+	.block#{$i} img{
+		max-width:100%;
+		height: auto;
 		height:auto;
 	}
 }
@@ -48,17 +67,22 @@ h1 {
 	padding:10px;
 }
 
+.lowerDiv {
+	margin:10px 0
+}
+
 .form {
 	float:left;
-	margin-left:30px;
+	
 }
 
 fieldset {
 	padding:8px;
 	border:1px solid #cccccc;
-	margin:0 10px;
+	margin:0 10px 0 0;
 	background-color:pink;
 	max-width:310px;
+
 }
 
 textarea {
@@ -67,10 +91,10 @@ textarea {
 	width:440px;
 	margin:2px 0;
 	
-	:focus {
-	border:2px solid #1351b4;
-	background-color:#ffffff;
-}
+	&:focus {
+		border:2px solid #1351b4;
+		background-color:#ffffff;
+	}
 }
 .input {
 	border:1px solid #333333;
@@ -79,15 +103,16 @@ textarea {
 	line-height:27px;
 	margin:0;
 	
-	:focus {
-	border:2px solid #1261b4;
-	background:none;
-	background-color:#ffffff;
-}
+	&:focus {
+		border:2px solid #1261b4;
+		background:none;
+		background-color:#ffffff;
+	}
 }
 
 #googleMap {
-	height:276px;
+	height:309px;
 	min-width:250px;
 	max-width:100%;
 }
+
