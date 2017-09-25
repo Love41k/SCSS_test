@@ -1,0 +1,134 @@
+@for $i from 1 through 3 {
+	.block#{$i} {
+		float:left;
+		font:normal 14px Roboto-Black;
+		width:calc(32% - 46px);
+		height:auto;
+		margin:5px 20px 30px;
+		text-align:center;
+		border:5px outset Pink;
+		overflow:hidden;
+	}
+	.block#{$i} img{
+		width:100%;
+		height:auto;
+	}
+}
+
+.block1 img, .block2 img, .block3 img {
+	width:100%;
+	height:auto;
+	
+}
+ege gergregwrtgwrtgwetgwegwegwegwegwewelghvew;uyigwegvhlekqfhvgewi;hf;jew
+
+
+
+@media screen and (max-width: 830px) {
+	#hr1 {
+		
+	}
+
+	#hr2 {
+		position:fixed;
+		left:8%;
+		top:-27px;
+	}
+
+
+	.logo {
+		position:fixed;
+		right:90%;
+		top:3px;
+		z-index:1;
+	}
+}		  
+
+@media screen and (max-width: 44em) {
+	html,
+	body {
+
+	}
+	
+	.header {
+
+	}
+	
+
+	
+	#hr1 {
+
+	}
+
+	#hr2 {
+		position:fixed;
+		top:-27px;
+	}
+
+	
+	.logo {
+		position:fixed;
+		left:41%;
+	}
+	
+	.content-text {
+		margin-top: 79px;
+	}
+
+	nav {
+
+	}
+	nav ul > li {
+
+	}
+	nav ul li a {
+		padding: 15px 10px;
+	}
+	
+	label {
+		display: block;
+	}
+	
+
+/* 
+2 типа ссылок (а)
+1 - обычная ссылка (наведение, нажатие, при наведении
+ цвет на 25% ярче базового, при нажатии на 20% темнее 
+ базового)
+2 - ссылка в виде кнопки (бордер, закруглить края, бг 
+прозрачное и при наведении цветное)
+
+*/
+
+label:hover,
+input:checked ~ label {
+	color: #000;
+}
+
+input:checked ~ nav {
+	opacity: 1;
+	left: 0;
+}
+input:checked ~ nav ul > li {
+	padding: .55em .55em .55em 1.5em;
+}
+
+input:checked ~ .content-text {
+	margin-left: 20.5em;
+	margin-right: -20.5em;
+}
+/* !!! циклом !!! */
+.block1, .block2, .block3 {
+	float:left;
+	font:normal 14px Roboto-Black;
+	width:98%;
+	margin:10px 0 10px;
+	text-align:center;
+	border:5px outset Pink;
+}
+.footermenu ul {
+	margin-left:-29%;
+	width:70%
+	
+}
+
