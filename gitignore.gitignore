@@ -1,0 +1,7 @@
+# Lines starting with '#' are considered comments.
+# Ignore (generated) html files,
+*.sass-cache
+# Ignore objects and archives.
+*.[oa]
+*.~
+*~

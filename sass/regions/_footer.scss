@@ -1,23 +1,25 @@
 //footer
 .footer {
-	height:170px;
-	margin-top:10px;
+	height:150px;
+	margin:10px auto 0;
 	text-align:center;
 	background-color:#fff;
 	border-top:6px double lightpink;
+	text-align:center;	
+
 
 	.footermenu{
 		@include breakpoint(703px){
-			margin-left:-29%;
-			width:70%
+			margin:0 auto;
+			width:70%;
 		}
-	}					
-	ul {
-		position:absolute;
-		left:35%;
-		width:39%;
-		text-align:center;	
+
+		ul {
+		/*position:absolute;
+		left:35%;*/
+		width:365px;
 		padding-top: 25px;
+		margin:0 auto;
 
 		li {
 			float:left;
@@ -35,16 +37,23 @@
 		}
 	}
 }
+}
 
 .list {
-	margin-top:50px;
+	margin:40px auto 0;
 	text-align:center;
+				list-style-type: none;
+
 	
-	 li {
-	list-style-type: none;
-	padding-top:13px;
-	letter-spacing:1.4px;
-	font:14px bold OpenSans-Bold, sans-serif;
+	ul {
+			list-style-type: none;
+
+		li {
+			padding-top:5px;
+			letter-spacing:1.4px;
+			font:14px bold OpenSans-Bold, sans-serif;
+
+		}
+
 	}
-	
 }

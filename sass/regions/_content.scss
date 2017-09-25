@@ -63,7 +63,7 @@ h1 {
 #lipsum {
 	clear:both;
 	font:normal 14px Roboto-Black;
-	margin:0 10% 0 10%;
+	margin:0 2% 0 2%;
 	padding:10px;
 }
 
@@ -73,7 +73,10 @@ h1 {
 
 .form {
 	float:left;
-	
+			@include breakpoint(703px){
+				float:none;
+				margin:0 7em;
+				}
 }
 
 fieldset {
